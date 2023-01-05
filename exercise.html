@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Project</title>
+    
+</head>
+
+<body>
+    <br><br><br>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="cv.html"><b>CV</b></a></li>
+                <li><a href="gallery.html"><b>Gallery</b></a></li>
+                <li><a href="sounds.html"><b>Sounds</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+              <li><a href="exercise.html"><b>exercise</b></a></li>
+            </ul>
+        </div>
+    </div>
+<div class="btn">
+        <h2>This The next for find the factorial :</h2>
+        <form action="#" method="get">
+            Number :
+            <input type="text" name="firstnum" value="">
+            <br>
+            Factorial :
+            <input type="text" name="output" value="">
+            <br>
+            <input type="button" name="button" value="get the factorial"
+            onclick="myfun(this.form)">
+
+        </form>
+    </div>
+    <script>
+        var i = 1;
+        var fact = 1;
+        function myfun(form){
+            var num =form.firstnum.value;
+            while(i<=num){
+                fact = fact*i;
+                i++;
+            }
+            form.output.value =fact;
+        }
+    </script>
+  </body>
+</html>
